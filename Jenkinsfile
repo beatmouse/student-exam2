@@ -2,8 +2,11 @@
 
 //pipeline {
    
-node() { dockerfile true }
+//node() { dockerfile true }
    //def workspace = env.WORKSPACE
+node(){
+    //now you are on slave labeled with 'label'
+    def workspace = pwd()
     def workspace = pwd()
     def buildNumber = env.BUILD_NUMBER
     echo "workspace directory is ${workspace}"
