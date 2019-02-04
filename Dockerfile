@@ -7,8 +7,8 @@ COPY requirements.txt requirements.txt
 
 RUN python3.6 -m venv venv 
 RUN . venv/bin/activate && \
-pip install -e . && \
-pip install -r requirements.txt
+pip install -r requirements.txt && \
+pip install -e . 
 
 RUN export LC_ALL=en_US.utf-8 && \
 export LANG=en_US.utf-8
