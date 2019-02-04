@@ -1,14 +1,18 @@
 FROM python:3.6
 #VOLUME /var/run/docker.sock:/var/run/docker.sock
 WORKDIR /app
+
 #RUN cd /app
-VOLUME /app2:/app/
+#VOLUME /app2:/app/
+
+RUN git clone https://github.com/beatmouse/student-exam2.git
+
 COPY requirements.txt requirements.txt
 
 RUN python3.6 -m venv venv 
 RUN . venv/bin/activate 
 
-RUN pwd && ls -la
+#RUN pwd && ls -la
 
 RUN pip install -e . 
 RUN pip install -r requirements.txt
