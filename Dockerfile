@@ -12,7 +12,7 @@ RUN python3.6 -m venv venv
 RUN . venv/bin/activate 
 
 #RUN cd student-exam2
-#RUN pwd && ls -la
+RUN pwd && ls -la
 
 RUN pip install -e . 
 RUN pip install -r requirements.txt
