@@ -1,8 +1,10 @@
 //Jenkinsfile (Declarative Pipeline)
 
-pipeline {
-    agent { dockerfile true }
-    def workspace = env.WORKSPACE
+//pipeline {
+   
+node() { dockerfile true }
+   //def workspace = env.WORKSPACE
+    def workspace = pwd()
     def buildNumber = env.BUILD_NUMBER
     echo "workspace directory is ${workspace}"
     echo "build URL is ${env.BUILD_URL}"
