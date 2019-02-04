@@ -6,9 +6,9 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 
 RUN python3.6 -m venv venv 
-RUN . venv/bin/activate && \
-pip install -r requirements.txt && \
-pip install -e . 
+RUN . venv/bin/activate 
+RUN pip install -e . 
+RUN pip install -r requirements.txt
 
 RUN export LC_ALL=en_US.utf-8 && \
 export LANG=en_US.utf-8
