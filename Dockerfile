@@ -12,7 +12,7 @@ COPY requirements.txt requirements.txt
 RUN python3.6 -m venv venv 
 RUN . venv/bin/activate 
 
-#RUN pwd && ls -la
+RUN pwd && ls -la
 
 RUN pip install -e . 
 RUN pip install -r requirements.txt
