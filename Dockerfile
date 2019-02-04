@@ -9,8 +9,9 @@ RUN . venv/bin/activate
 
 RUN pwd && ls -la
 
-RUN pip install -e . 
+
 RUN pip install -r requirements.txt
+RUN pip install -e . 
 
 RUN export LC_ALL=en_US.utf-8 && \
 export LANG=en_US.utf-8
