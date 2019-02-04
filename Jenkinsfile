@@ -2,7 +2,7 @@ pipeline {
    
 agent() { dockerfile true }
      
-   def workspace = pwd()
+   //def workspace = pwd()
    //def buildNumber = env.BUILD_NUMBER
    //echo "workspace directory is ${workspace}"
    //echo "build URL is ${env.BUILD_URL}"
