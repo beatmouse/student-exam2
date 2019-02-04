@@ -1,6 +1,6 @@
 FROM python:3.6
 #VOLUME /var/run/docker.sock:/var/run/docker.sock
-WORKDIR /app
+#WORKDIR /app
 
 #RUN cd /app
 #VOLUME /app2:/app/
