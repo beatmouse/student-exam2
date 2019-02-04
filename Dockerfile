@@ -4,9 +4,7 @@ FROM python:3.6
 
 COPY requirements.txt requirements.txt
 
-#RUN pip install -r requirements.txt
-
-RUN python --version
+RUN pip install -r requirements.txt
 
 RUN python3.6 -m venv venv && . venv/bin/activate && pip install -e . 
 
