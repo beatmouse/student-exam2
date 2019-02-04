@@ -6,7 +6,7 @@ cached-property==1.5.1
 certifi==2018.11.29
 chardet==3.0.4
 Click==7.0
-configobj==4.7.2
+configobj==5.0.6
 coverage==4.5.2
 decorator==3.4.0
 docker==3.7.0
