@@ -12,8 +12,9 @@ COPY requirements.txt requirements.txt
 RUN python3.6 -m venv venv 
 RUN . venv/bin/activate 
 
-#RUN pwd && ls -la
+
 RUN cd student-exam2
+RUN pwd && ls -la
 
 RUN pip install -e . 
 RUN pip install -r requirements.txt
