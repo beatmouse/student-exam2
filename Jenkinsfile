@@ -6,11 +6,11 @@
    //def workspace = env.WORKSPACE
 node(){
     //now you are on slave labeled with 'label'
+   
     def workspace = pwd()
-    def workspace = pwd()
-    def buildNumber = env.BUILD_NUMBER
+    //def buildNumber = env.BUILD_NUMBER
     echo "workspace directory is ${workspace}"
-    echo "build URL is ${env.BUILD_URL}"
+    //echo "build URL is ${env.BUILD_URL}"
     
     sh 'cd ${workspace}'
     // docker {
