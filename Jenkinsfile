@@ -1,6 +1,6 @@
 pipeline {
    
-node() { dockerfile true }
+agent() { dockerfile true }
      
    // def workspace = pwd()
    //def buildNumber = env.BUILD_NUMBER
