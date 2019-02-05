@@ -12,7 +12,7 @@ agent any
       
        stage('Test') {
             steps {
-                sh 'pip3.6 install -e \'.[test]\''
+                sh 'pip3 install -e \'.[test]\''
                              
             }
         }
