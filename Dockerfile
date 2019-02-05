@@ -4,7 +4,7 @@ WORKDIR /student-exam2
 RUN python3.6 -m venv venv && . venv/bin/activate && pip install -e . 
 RUN export LC_ALL=en_US.utf-8 && \
 export LANG=en_US.utf-8
-RUN apt-get install python3-flask
+RUN apt-get install python-flask
 RUN export FLASK_APP=js_example
 
 RUN python3.6 -m flask run --host=0.0.0.0
