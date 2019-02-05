@@ -18,7 +18,7 @@ agent any
    
       stage('Build') {
             steps {
-             dockerCmd "build --tag beatmouse/app ."
+              sh 'docker build --tag beatmouse/app .'
               }            
             }
         
