@@ -28,6 +28,6 @@ agent any
                sh 'docker push beatmouse/app:latest'
               }            
             }
-            
+      } 
    }
 }
