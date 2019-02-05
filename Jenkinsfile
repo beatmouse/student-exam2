@@ -12,11 +12,12 @@ agent any
       
        stage('Test') {
             steps {
-                sh 'pip3 install -e \'.[test]\''
-                             
+                sh 'pip3 install -e \'.[test]\' && coverage run -m pytest && coverage report'          
             }
         }
    
    
+      
+      
    }
 }
