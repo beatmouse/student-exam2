@@ -13,9 +13,10 @@ agent any
    stages {
        stage('Test') {
             steps {
-                sh 'pip install -e \'.[test]\''
-                sh 'coverage run -m pytest'
-                sh 'coverage report'
+                sh " " "
+                pip install -e \'\.[test]\'
+                
+               " " "
             }
         }
    
