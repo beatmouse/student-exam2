@@ -6,18 +6,16 @@ agent any
        stage('Clone') {
             steps {
                 checkout scm
-
             }
         }
   
+      
    stages {
        stage('Test') {
             steps {
-                pip install -e '.[test]'
-                coverage run -m pytest
-                coverage report
-
-
+                sh 'pip install -e \'.[test]\''
+                sh 'coverage run -m pytest'
+                sh 'coverage report'
             }
         }
    
