@@ -16,7 +16,13 @@ agent any
             }
         }
    
-   
+   stage('Build') {
+      agent {
+         docker {
+            image 'beatmouse:app'
+            
+            }
+        }
       
       
    }
