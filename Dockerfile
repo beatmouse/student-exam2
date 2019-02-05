@@ -7,4 +7,4 @@ export LANG=en_US.utf-8
 RUN apt-get update -y && apt-get install -y python-flask
 RUN export FLASK_APP=js_example
 
-RUN python3.6 -m flask run --host=0.0.0.0
+RUN python -m flask run --host=0.0.0.0
