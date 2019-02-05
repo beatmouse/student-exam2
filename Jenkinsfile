@@ -22,7 +22,12 @@ agent any
               }            
             }
         
-      
-      
+      stage('Publish') {
+            steps {
+               withDockerRegistry([ credentialsId: "83e35e74-9f7a-499e-b1ed-b4b47846f421", url: "" ]) {
+               sh 'docker push beatmouse/app:latest'
+              }            
+            }
+            
    }
 }
