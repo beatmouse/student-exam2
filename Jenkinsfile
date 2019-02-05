@@ -14,7 +14,7 @@ agent any
        stage('Test') {
             steps {
                 sh " " "
-                pip install -e \'\.[test]\'
+                pip install -e \'.[test]\'
                 
                " " "
             }
