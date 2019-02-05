@@ -1,6 +1,6 @@
 FROM python:3.6
-
-WORKDIR /app
+RUN git init && git clone https://github.com/beatmouse/student-exam2.git
+WORKDIR /student-exam2
 RUN pwd && ls -la
 
 #COPY requirements.txt requirements.txt
