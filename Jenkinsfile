@@ -20,7 +20,7 @@ agent any
       agent {
          docker {
             image 'beatmouse:app'
-            
+              }            
             }
         }
       
