@@ -10,6 +10,12 @@ agent any
         }
   
       
+       stage('Test') {
+            steps {
+                sh 'script: pip install -e \'.[test]\''
+                             
+            }
+        }
    
    
    }
