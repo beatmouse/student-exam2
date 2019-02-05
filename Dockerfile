@@ -1,6 +1,7 @@
 FROM python:3.6
 
-#WORKDIR /app
+WORKDIR /app
+RUN pwd && ls -la
 
 #COPY requirements.txt requirements.txt
 
@@ -8,7 +9,7 @@ FROM python:3.6
 
 RUN python3.6 -m venv venv && . venv/bin/activate && pip install -e . 
 
-#RUN pwd && ls -la
+
 
 RUN export LC_ALL=en_US.utf-8 && \
 export LANG=en_US.utf-8
