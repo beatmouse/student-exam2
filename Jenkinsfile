@@ -1,6 +1,6 @@
 pipeline {
    
-agent none
+agent agent
                     
    stages {
        stage('Test') {
