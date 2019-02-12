@@ -24,7 +24,7 @@ agent any
         
       stage('Publish') {
             steps {
-               withDockerRegistry([ credentialsId: "2512a90e-d0f2-4035-aa8f-4c7defb983c7", url: "" ]) {
+               withDockerRegistry([ credentialsId: "79bd83bb-4435-4060-be7b-a5620bd831a9", url: "" ]) {
                sh 'docker push beatmouse/app:latest'
               }            
             }
