@@ -1,10 +1,7 @@
 FROM python:3.6
 RUN git init && git clone https://github.com/beatmouse/student-exam2.git
 WORKDIR /student-exam2
+COPY boot.sh .
 RUN python3.6 -m venv venv && . venv/bin/activate && pip install -e . 
-RUN export LC_ALL=en_US.utf-8 && \
-export LANG=en_US.utf-8
-
-RUN export FLASK_APP=js_example
-ENTRYPOINT ["sh", "-c", "flask", "run"]
-#RUN python -m flask run --host=0.0.0.0
+RUN pip3.6 install flask
+CMD bash boot.sh
